@@ -1,0 +1,159 @@
+.marcas{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+@keyframes slide{
+    from{
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+.logos{
+    overflow: hidden;
+    padding: 60px 0;
+    background: #fff;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+
+}
+ 
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left,  rgba(255, 255, 255, 0), #fff );
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right,  rgba(255, 255, 255, 0), #fff );
+}
+
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos-slide{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 100px;
+    margin: 0 30px;
+}
+
+/* end marcas /inicio */
+
+
+
+/* Start Cards2 / about */
+
+.all2{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.boody2{
+    display: flex;
+    flex-wrap: wrap ; /*para organizar cartas*/
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+}
+.cardd2 {
+    position: relative;
+    width: 270px;
+    height: 330px;
+    margin: 20px;
+}
+.cardd2 .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.cardd2 .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.cardd2 .front img{
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.cardd2 .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.cardd2 .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(250, 29, 0);
+    padding: 15px;
+    color: #f3f2f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000; 
+}
+
+.cardd2 .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.cardd2 .back .link a{
+    color: #f3f3f3;
+}
+.cardd2 .back h3{
+    font-size: 35px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.cardd2 .back p{
+    letter-spacing: 1px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.cardd2:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.cardd2:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* End Cards2 / about */

@@ -1,0 +1,73 @@
+/*acerca de nosotros*/
+
+/*our blog*/
+
+/** blog section **/
+
+.blog {
+    background-color: #f5e6e6;
+    padding: 90px 0px;
+  }
+  .blog .titlepage {
+    text-align: center;
+  }
+  
+  .blog .blog-box {
+   margin-bottom: 30px;
+  
+  } 
+  
+  .blog .blog-box figure {
+    margin: 0px;
+    
+  }
+  
+  .blog .blog-box h3 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
+  .blog .blog-box p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .blog .blog-box .travel {
+    padding: 15px 0px;
+  }
+  .blog .blog-box .travel span {
+    color: #f34110;
+    display: flex;
+    justify-content: left; /* Alinea el contenido a la derecha */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900; /* Extra negrita */
+  }
+  .blog .blog-box .travel p {
+    float: right;
+    padding-left: 15px;
+  }
+  .blog-box img{
+    height: 290px;
+    width: 535px;
+    border-radius:2% ;
+  }
+
+  .travel h3, p {
+    text-align: left;
+  }
+ 
+  /** end blog section **/
+
+  .quienessomos img{
+    height: 270px;
+    width: 290px;
+    margin-left: 105%;
+    margin-top: -210px;
+    border-radius: 60%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    padding: 5px; /* Espacio entre la imagen y el borde */
+    background-color: #f31010; /* Color de fondo para el espacio interno */
+    border: 4px solid #2200ff; /* Borde sólido de 5px de grosor y color gris oscuro */
+
+  }
+
+ 
